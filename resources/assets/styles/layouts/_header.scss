@@ -1,0 +1,18 @@
+#header {
+  .brand {
+    font-size: rem(18);
+    font-weight: 700;
+    font-family: $font-family-opensans;
+    color: $second-color;
+
+    @include hover() {
+      img {
+        opacity: 0.8;
+      }
+    }
+
+    img {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+// Mixins
+
+// Hovers
+//
+// Create pseduo-classes for `:hover`, `:active`, and `:focus`.
+//
+// @usage - `@include hover`
+//
+// Styleguide 10.3
+
+@mixin hover {
+  &:hover,
+  &:focus { @content; }
+}
+
+@mixin vertical-align($position: absolute, $top: 50%) {
+  position: $position;
+  top: $top;
+  -webkit-transform: translateY(-$top);
+  -ms-transform: translateY(-$top);
+  transform: translateY(-$top);
+}
