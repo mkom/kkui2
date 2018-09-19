@@ -137,6 +137,10 @@ function locate_template($templates)
 function display_sidebar()
 {
     static $display;
-    isset($display) || $display = apply_filters('sage/display_sidebar', false);
-    return $display;
+    isset($display) || $display = apply_filters('sage/display_sidebar', true);
+    return $display ? in_array(true, [
+       // is_home(),
+        ///is_category(),
+        //is_tag(),
+    ]): $display;
 }

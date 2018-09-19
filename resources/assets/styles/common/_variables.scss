@@ -1,6 +1,9 @@
 /** Import Bootstrap functions */
 @import "~bootstrap/scss/functions";
 
+$main-sm-columns:     12;
+$sidebar-sm-columns:  4;
+
 $theme-colors: (
   primary: #525ddc
 );
