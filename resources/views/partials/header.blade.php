@@ -1,6 +1,6 @@
 <header id="header" class="header">
   <div class="container">
-    <div class="header__inner pt-5 pb-5 d-flex justify-content-between align-items-center">
+    <div class="header__inner pt-3 pb-5 pt-md-5 pb-md-5 d-flex justify-content-between align-items-center">
       <a class="brand d-flex align-items-center" title=" {{ get_bloginfo('name', 'display') }}" href="{{ home_url('/') }}" >
         <img src="@asset('images/logo.png')" width="56" height="56" alt=" {{ get_bloginfo('name', 'display') }}" class="d-inline-block align-top mr-3">
         {{ get_bloginfo('name', 'display') }}

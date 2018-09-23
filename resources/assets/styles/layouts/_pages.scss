@@ -1,0 +1,15 @@
+.section-header {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+  h1 {
+    font-weight: 600;
+    line-height: 1.2;
+    font-size: rem(20);
+    padding-bottom: 20px;
+    margin: 0;
+    display: inline-block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.54);
+    margin-bottom: -1px;
+  }
+}
