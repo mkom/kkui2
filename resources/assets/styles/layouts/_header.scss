@@ -15,25 +15,40 @@
       opacity: 1;
     }
   }
-}
 
-.primary-nav {
-  .nav {
-    li {
-      padding: 0 15px;
+  .socm {
+    a {
+      img {
+        opacity: 1;
+      }
 
-      a {
-        text-transform: uppercase;
-        font-weight: 300;
-        color: $body-color;
-        font-size: rem(14);
-        font-family: $font-family-notosans;
+      @include hover() {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
 
-        &:hover,
-        &:focus {
-          color: $headings-color;
+  .primary-nav {
+    .nav {
+      li {
+        padding: 0 15px;
+
+        a {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $body-color;
+          font-size: rem(14);
+          font-family: $font-family-notosans;
+
+          &:hover,
+          &:focus {
+            color: $headings-color;
+          }
         }
       }
     }
   }
 }
+

@@ -58,6 +58,18 @@ a:focus {
   }
 }
 
+.widget {
+  h3 {
+    font-size: rem(22);
+    font-weight: 600;
+    letter-spacing: -0.42px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 20px;
+    display: block;
+  }
+}
+
 .loading {
   width: 100px;
 }
