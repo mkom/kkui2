@@ -1,3 +1,7 @@
+html {
+  font-size: 16px;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -20,18 +24,18 @@ a:focus {
   }
 
   .entry-title {
-    font-size: rem(24);
+    font-size: rem(22);
     font-weight: 600;
     letter-spacing: -0.42px;
   }
 
   .entry-summary {
-    font-size: rem(15);
+    font-size: rem(14);
     line-height: 20px;
   }
 
   .entry-meta {
-    font-size: rem(13);
+    font-size: rem(12);
     line-height: 20px;
 
     .author {

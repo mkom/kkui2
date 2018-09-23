@@ -16,3 +16,24 @@
     }
   }
 }
+
+.primary-nav {
+  .nav {
+    li {
+      padding: 0 15px;
+
+      a {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $body-color;
+        font-size: rem(14);
+        font-family: $font-family-notosans;
+
+        &:hover,
+        &:focus {
+          color: $headings-color;
+        }
+      }
+    }
+  }
+}

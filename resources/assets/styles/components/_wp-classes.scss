@@ -55,6 +55,12 @@
   @extend .sr-only-focusable;
 }
 
+.content {
+  .sidebar-primary & {
+    @extend .row;
+  }
+}
+
 .main {
   .sidebar-primary & {
     @include make-col-ready();
