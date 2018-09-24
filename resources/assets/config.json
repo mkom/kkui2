@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/kkui2",
-  "devUrl": "http://wordpress.local",
+  "devUrl": "http://emhaka.local/",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
