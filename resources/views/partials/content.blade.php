@@ -9,7 +9,7 @@
         </h2>
         <div class="d-block d-md-none mb-3"> @include('partials/entry-meta')</div>
       </header>
-      <div class="d-flex justify-content-md-end align-items-center mr-md-3">
+      <div class="d-flex justify-content-center justify-content-md-end align-items-center mr-md-3">
         @if(has_post_thumbnail())
           <a class="d-none d-md-block" href="{{ get_permalink() }}"><img src="{{the_post_thumbnail_url('thumbnail')}}" class="img-fluid " alt="{{ get_the_title()}}" /></a>
           <a class="d-block d-md-none" href="{{ get_permalink() }}"><img src="{{the_post_thumbnail_url('medium')}}" class="img-fluid " alt="{{ get_the_title()}}" /></a>
