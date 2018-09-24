@@ -1,9 +1,5 @@
 html {
-  font-size: 14px;
-
-  @include media-breakpoint-up(md) {
-    font-size: 16px;
-  }
+  font-size: 16px;
 }
 
 body {
@@ -11,7 +7,6 @@ body {
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   font-size: 16px;
-  letter-spacing: -0.2px;
 }
 
 a:hover,
@@ -21,4 +16,64 @@ a:focus {
 
 .no-radius {
   border-radius: 0;
+}
+
+.list-article {
+  a {
+    color: $headings-color;
+  }
+
+  .entry-title {
+    font-size: rem(22);
+    font-weight: 600;
+    letter-spacing: -0.42px;
+  }
+
+  .entry-summary {
+    font-size: rem(14);
+    line-height: 20px;
+  }
+
+  .entry-meta {
+    font-size: rem(12);
+    line-height: 20px;
+
+    .author {
+      color: $headings-color;
+    }
+  }
+}
+
+.preview-image {
+  background-color: $color-primary;
+  background-image: url("../images/preview-img.png");
+  background-position: center;
+  height: 300px;
+  width: 300px;
+  background-repeat: no-repeat;
+
+  @include media-breakpoint-up(md) {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+.widget {
+  h3 {
+    font-size: rem(22);
+    font-weight: 600;
+    letter-spacing: -0.42px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+    padding-bottom: 20px;
+    display: block;
+  }
+}
+
+.loading {
+  width: 100px;
+}
+
+.jscroll-loading {
+  text-align: center;
 }

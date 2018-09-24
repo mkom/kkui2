@@ -1,0 +1,21 @@
+.sidebar {
+  ul {
+    padding: 0;
+    list-style: none;
+
+    li {
+      margin-bottom: 20px;
+
+      a {
+        color: $headings-color;
+        font-family: $font-family-notosans;
+        font-size: rem(15);
+        font-weight: 700;
+
+        @include hover() {
+          color: $body-color;
+        }
+      }
+    }
+  }
+}

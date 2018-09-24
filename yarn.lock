@@ -4222,6 +4222,10 @@ jsbn@~0.1.0:
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/jsbn/-/jsbn-0.1.1.tgz#a5e654c2e5a2deb5f201d96cefbca80c0ef2f513"
 
+jscroll@^2.4.1:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/jscroll/-/jscroll-2.4.1.tgz#b8ea7bdbe290c577b20d00e54fb5da606f610e31"
+
 jsdom@^6.5.1:
   version "6.5.1"
   resolved "https://registry.yarnpkg.com/jsdom/-/jsdom-6.5.1.tgz#b6064d6a7651081af41d576edc56bc51e00122c0"

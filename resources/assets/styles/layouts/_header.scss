@@ -15,4 +15,40 @@
       opacity: 1;
     }
   }
+
+  .socm {
+    a {
+      img {
+        opacity: 1;
+      }
+
+      @include hover() {
+        img {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  .primary-nav {
+    .nav {
+      li {
+        padding: 0 15px;
+
+        a {
+          text-transform: uppercase;
+          font-weight: 300;
+          color: $body-color;
+          font-size: rem(14);
+          font-family: $font-family-notosans;
+
+          &:hover,
+          &:focus {
+            color: $headings-color;
+          }
+        }
+      }
+    }
+  }
 }
+
