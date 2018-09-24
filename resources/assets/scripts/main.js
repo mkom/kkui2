@@ -8,6 +8,9 @@ import "./autoload/**/*"
 
 import 'jscroll/dist/jquery.jscroll.min';
 
+// Import owl.carousel
+import 'owl.carousel/dist/owl.carousel.min';
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';

@@ -31,6 +31,45 @@
   }
 
   .primary-nav {
+    &.primary-m-nav {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+
+      .owl-nav {
+        position: absolute;
+        top: -2px;
+        margin: 0;
+        width: 100%;
+
+        button {
+          margin: 0;
+          color: $color-primary;
+          opacity: 1;
+          outline: none;
+
+          @include hover() {
+            outline: none;
+            background-color: transparent;
+            opacity: 0.8;
+          }
+        }
+
+        .owl-prev {
+          float: left;
+          margin-left: -8px;
+        }
+
+        .owl-next {
+          float: right;
+          margin-right: -8px;
+        }
+
+        .disabled {
+          display: none;
+        }
+      }
+    }
+
     .nav {
       li {
         padding: 0 15px;
@@ -45,6 +84,16 @@
           &:hover,
           &:focus {
             color: $headings-color;
+          }
+        }
+      }
+
+      &.menu-carousel {
+        li {
+          padding: 0 5px;
+
+          a {
+            font-weight: 600;
           }
         }
       }
