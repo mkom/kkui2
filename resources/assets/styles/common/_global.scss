@@ -14,8 +14,28 @@ a:focus {
   text-decoration: none;
 }
 
+p {
+  margin-bottom: 30px;
+  font-size: rem(18);
+}
+
 .no-radius {
   border-radius: 0;
+}
+
+.entry-title {
+  font-family: $font-family-lora;
+  line-height: 1;
+}
+
+.page-header h1 {
+  .page & {
+    @extend .entry-title;
+  }
+}
+
+.entry-content {
+  color: $headings-color;
 }
 
 .list-article {
@@ -30,8 +50,10 @@ a:focus {
   }
 
   .entry-summary {
-    font-size: rem(14);
-    line-height: 20px;
+    p {
+      font-size: rem(14);
+      line-height: 20px;
+    }
   }
 
   .entry-meta {
@@ -42,6 +64,11 @@ a:focus {
       color: $headings-color;
     }
   }
+}
+
+.article-content {
+  max-width: 700px;
+  margin: 30px auto;
 }
 
 .preview-image {

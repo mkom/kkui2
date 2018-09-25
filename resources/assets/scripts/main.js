@@ -17,6 +17,14 @@ import common from './routes/common';
 import home from './routes/home';
 import aboutUs from './routes/about';
 
+import fontawesome from "@fortawesome/fontawesome";
+import faFacebook from "@fortawesome/fontawesome-free-brands/faFacebookF";
+import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
+import faSearch from "@fortawesome/fontawesome-free-solid/faSearch";
+import faEnvelope from "@fortawesome/fontawesome-free-solid/faEnvelope";
+
+fontawesome.library.add(faFacebook, faTwitter, faSearch, faEnvelope);
+
 /** Populate Router instance with DOM routes */
 const routes = new Router({
   // All pages

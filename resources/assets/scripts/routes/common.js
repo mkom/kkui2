@@ -29,10 +29,12 @@ export default {
                   slideBy: 1,
               },
               600: {
-                  items: 0,
+                  items: 5,
+                  slideBy: 1,
               },
               1000: {
-                  items: 0,
+                  items: 10,
+                  slideBy: 1,
               },
           },
       });

@@ -13,6 +13,7 @@ use Roots\Sage\Template\BladeProvider;
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/OpenSans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', false, null);
     wp_enqueue_style('sage/Notosans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i', false, null);
+    wp_enqueue_style('sage/Lora', 'https://fonts.googleapis.com/css?family=Lora:400,700', false, null);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
 }, 100);
