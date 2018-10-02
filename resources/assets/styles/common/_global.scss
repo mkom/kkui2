@@ -12,6 +12,7 @@ body {
 a:hover,
 a:focus {
   text-decoration: none;
+  opacity: 0.8;
 }
 
 p {
@@ -44,9 +45,13 @@ p {
   }
 
   .entry-title {
-    font-size: rem(22);
+    font-size: rem(18);
     font-weight: 600;
     letter-spacing: -0.42px;
+
+    @include media-breakpoint-up(md) {
+      font-size: rem(22);
+    }
   }
 
   .entry-summary {
@@ -74,8 +79,8 @@ p {
   background-color: $color-primary;
   background-image: url("../images/preview-img.png");
   background-position: center;
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   background-repeat: no-repeat;
 
   @include media-breakpoint-up(md) {
