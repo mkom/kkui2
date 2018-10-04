@@ -47,6 +47,8 @@
           color: $color-primary;
           opacity: 1;
           outline: none;
+          font-size: 27px;
+          line-height: 16px;
 
           @include hover() {
             outline: none;
@@ -57,12 +59,12 @@
 
         .owl-prev {
           float: left;
-          margin-left: -8px;
+          margin-left: -12px;
         }
 
         .owl-next {
           float: right;
-          margin-right: -8px;
+          margin-right: -12px;
         }
 
         .disabled {
@@ -92,6 +94,11 @@
       &.menu-carousel {
         li {
           padding: 0 5px;
+          line-height: 1;
+
+          @include media-breakpoint-up(md) {
+            line-height: 1.5;
+          }
 
           a {
             @include media-breakpoint-down(sm) {

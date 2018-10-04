@@ -22,8 +22,9 @@ import faFacebook from "@fortawesome/fontawesome-free-brands/faFacebookF";
 import faTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 import faSearch from "@fortawesome/fontawesome-free-solid/faSearch";
 import faEnvelope from "@fortawesome/fontawesome-free-solid/faEnvelope";
+import faCalendar from "@fortawesome/fontawesome-free-solid/faCalendarAlt";
 
-fontawesome.library.add(faFacebook, faTwitter, faSearch, faEnvelope);
+fontawesome.library.add(faFacebook, faTwitter, faSearch, faEnvelope, faCalendar);
 
 /** Populate Router instance with DOM routes */
 const routes = new Router({

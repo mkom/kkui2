@@ -17,11 +17,11 @@
     </div>
     <div class="col-4 col-md-3 mb-3 p-md-0 pl-0">
       <div class="d-flex justify-content-center justify-content-md-end align-items-center mr-md-3">
-        @if(has_post_thumbnail())
-          <a class="d-block" href="{{ get_permalink() }}"><img src="{{the_post_thumbnail_url('thumbnail')}}" class="img-fluid " alt="{{ get_the_title()}}" /></a>
-        @else
-          <a href="{{ get_permalink() }}" class="preview-image"></a>
-        @endif
+        <div class="preview-image">
+          @if(has_post_thumbnail())
+            <img src="{{the_post_thumbnail_url('large')}}" class="object-fit_cover h-100 w-100"  alt="{!!  get_the_title() !!}" />
+          @endif
+        </div>
       </div>
     </div>
   </div>
