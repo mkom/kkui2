@@ -75,6 +75,12 @@ p {
   }
 }
 
+.banner {
+  &__caption {
+    font-size: rem(13);
+  }
+}
+
 .preview-image {
   background-color: $color-primary;
   background-image: url("../images/preview-img.png");
