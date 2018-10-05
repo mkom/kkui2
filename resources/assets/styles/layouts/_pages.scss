@@ -13,3 +13,19 @@
     margin-bottom: -1px;
   }
 }
+
+.page-header {
+  .search-results & {
+    @extend .section-header;
+  }
+}
+
+.page-header h1 {
+  @extend .entry-title;
+
+  .error404 & {
+    font-weight: 900;
+    font-size: rem(80);
+    text-align: center;
+  }
+}

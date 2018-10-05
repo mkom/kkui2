@@ -10,7 +10,6 @@
         <span>Gambar: {!!  get_post(get_post_thumbnail_id())->post_content !!}</span>
       </div>
     @endif
-
   </div>
   <header class="mb-4">
     <div class="mb-3 color-primary">@include('partials/entry-meta')</div>

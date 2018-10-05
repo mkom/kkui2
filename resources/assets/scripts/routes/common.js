@@ -40,12 +40,16 @@ export default {
       });
 
       $(window).scroll(function() {
-          if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+          if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
               $('#goTop').fadeIn(200);    // Fade in the arrow
           } else {
               $('#goTop').fadeOut(200);   // Else fade out the arrow
           }
       });
+
+      if($('.main').height() <= 390) {
+          $('#footer').addClass('fixed-bottom');
+      }
 
       $("a[href='#top']").click(function() {
           $("html, body").animate({ scrollTop: 0 }, "slow");

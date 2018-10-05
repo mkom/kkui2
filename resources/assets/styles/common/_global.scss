@@ -24,21 +24,6 @@ p {
   border-radius: 0;
 }
 
-.entry-title {
-  font-family: $font-family-lora;
-  line-height: 1;
-}
-
-.page-header h1 {
-  .page & {
-    @extend .entry-title;
-  }
-}
-
-.entry-content {
-  color: $headings-color;
-}
-
 .list-article {
   a {
     color: $headings-color;
@@ -86,6 +71,7 @@ p {
   bottom: 20px;
   right: 20px;
   opacity: 0.8;
+  display: none;
 }
 
 .preview-image {

@@ -1,4 +1,4 @@
-<footer class="content-info footer pt-4 pb-4" id="footer">
+<footer class="content-info footer pt-4 pb-4 {{ (is_404())?'fixed-bottom':'' }}" id="footer">
   <div class="container">
     <div class="d-md-flex justify-content-between align-items-center text-center">
       <span>&copy; 2018</span>

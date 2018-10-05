@@ -10,7 +10,7 @@
           </h2>
         </header>
         <div class="entry-summary d-none d-md-block">
-          @php echo '<p>'. wp_trim_words( get_the_content(), 18, '...' ).'</p>'; @endphp
+          @php the_excerpt() @endphp
         </div>
         <div class="d-block mt-auto"> @include('partials/entry-meta')</div>
       </div>
