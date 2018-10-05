@@ -19,7 +19,7 @@
       @endif--}}
     </div>
     @if (has_nav_menu('primary_navigation'))
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'container_class' =>'primary-nav primary-m-nav pt-1 pb-1 pr-3 pl-3', 'menu_class' => 'nav owl-carousel owl-theme menu-carousel', 'container_id' => 'container-m-nav']) !!}
+      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'container_class' =>'primary-nav primary-m-nav pt-2 pb-2 pt-md-2 pb-md-2 pr-3 pl-3', 'menu_class' => 'nav owl-carousel owl-theme menu-carousel', 'container_id' => 'container-m-nav']) !!}
     @endif
   </div>
 </header>

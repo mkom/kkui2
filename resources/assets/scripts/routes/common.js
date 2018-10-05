@@ -42,8 +42,14 @@ export default {
       $(window).scroll(function() {
           if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
               $('#goTop').fadeIn(200);    // Fade in the arrow
+              $('.primary-nav').addClass('fixed-primary-nav container');
+              $('.primary-nav').addClass('pt-md-3 pb-md-3');
+              $('.primary-nav').removeClass('pt-md-2 pb-md-2');
           } else {
               $('#goTop').fadeOut(200);   // Else fade out the arrow
+              $('.primary-nav').removeClass('fixed-primary-nav container');
+              $('.primary-nav').removeClass('pt-md-3 pb-md-3');
+              $('.primary-nav').addClass('pt-md-2 pb-md-2');
           }
       });
 
