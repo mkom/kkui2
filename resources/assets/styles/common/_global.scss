@@ -81,6 +81,13 @@ p {
   }
 }
 
+#goTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 0.8;
+}
+
 .preview-image {
   background-color: $color-primary;
   background-image: url("../images/preview-img.png");

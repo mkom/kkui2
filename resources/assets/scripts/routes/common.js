@@ -39,5 +39,18 @@ export default {
           },
       });
 
+      $(window).scroll(function() {
+          if ($(this).scrollTop() >= 200) {        // If page is scrolled more than 50px
+              $('#goTop').fadeIn(200);    // Fade in the arrow
+          } else {
+              $('#goTop').fadeOut(200);   // Else fade out the arrow
+          }
+      });
+
+      $("a[href='#top']").click(function() {
+          $("html, body").animate({ scrollTop: 0 }, "slow");
+          return false;
+      });
+
   },
 };

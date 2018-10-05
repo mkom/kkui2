@@ -18,6 +18,7 @@
     </div>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
+    <a href="#top" id="goTop"><i class="fas fa-chevron-circle-up fa-2x"></i></a>
     @php wp_footer() @endphp
   </body>
 </html>
