@@ -1,12 +1,16 @@
 html {
-  font-size: 16px;
+  font-size: 14px;
+
+  @include media-breakpoint-up(md) {
+    font-size: 16px;
+  }
 }
 
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
-  font-size: 16px;
+  font-size: rem(16);
 }
 
 a:hover,

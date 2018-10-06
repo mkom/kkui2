@@ -2,3 +2,25 @@
   background-color: $gray;
   font-size: 15px;
 }
+
+.footer-nav {
+  .nav {
+    li {
+      padding: 0 5px;
+
+      a {
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $body-color;
+        font-size: rem(13);
+        font-family: $font-family-notosans;
+
+        &:hover,
+        &:focus {
+          color: $headings-color;
+          text-shadow: 0 0 0 $headings-color;
+        }
+      }
+    }
+  }
+}
