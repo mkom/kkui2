@@ -5,6 +5,10 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
 
+      var postPermalink = site_object.postPermalink;
+      //var postTitle = site_object.postTitle;
+      var postExcerpt = site_object.postExcerpt;
+
       var options = {
           loadingHtml: '<img src="/wp-content/themes/kkui2/dist/images/loading.svg" class="loading" alt="Loading" />',
           padding: 20,
@@ -53,13 +57,21 @@ export default {
           }
       });
 
-      if($('.main').height() <= 390) {
+      if($('.main').height() <= 600) {
           $('#footer').addClass('fixed-bottom');
       }
 
       $("a[href='#top']").click(function() {
           $("html, body").animate({ scrollTop: 0 }, "slow");
           return false;
+      });
+
+
+      $('#twitter_link').click(function(e) {
+          e.preventDefault();
+          var url = postPermalink;
+          var text = postExcerpt;
+          window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
       });
 
   },
