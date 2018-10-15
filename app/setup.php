@@ -12,7 +12,7 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     global $post;
-    $text = apply_filters('get_the_excerpt', get_post_field('post_excerpt', $post->ID));
+    $text = apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID));
 
     wp_enqueue_style('sage/OpenSans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', false, null);
     wp_enqueue_style('sage/Notosans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i', false, null);
@@ -24,7 +24,7 @@ add_action('wp_enqueue_scripts', function () {
         'siteurl' => get_option('siteurl'),
         'postPermalink' => get_the_permalink(),
         'postTitle' => get_the_title(),
-        'postExcerpt' => $text,
+        'postExcerpt' => strip_tags($text),
         'postID' => $post->ID
     );
 
