@@ -29,7 +29,7 @@
       <div class="section-header d-flex">
         <h1>Share</h1>
         <div class="shareit__inner ml-4 mb-3">
-          <a href="#"> <i class="fab fa-facebook-f mr-2"></i>Facebook</a>
+          <a href="#"  id="fb_link" > <i class="fab fa-facebook-f mr-2"></i>Facebook</a>
           <a href="#" id="twitter_link" class="ml-3"> <i class="fab fa-twitter mr-2"></i>Twitter</a>
         </div>
       </div>

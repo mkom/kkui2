@@ -3,7 +3,8 @@ module.exports = {
   "extends": "eslint:recommended",
   "globals": {
     "wp": true,
-    "site_object": true
+    "site_object": true,
+    "FB": true,
   },
   "env": {
     "node": true,

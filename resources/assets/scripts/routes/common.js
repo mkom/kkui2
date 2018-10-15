@@ -6,8 +6,14 @@ export default {
     // JavaScript to be fired on all pages, after page specific JS is fired
 
       var postPermalink = site_object.postPermalink;
-      //var postTitle = site_object.postTitle;
+      var postTitle = site_object.postTitle;
       var postExcerpt = site_object.postExcerpt;
+      var text_text= postExcerpt;
+
+      if(!postExcerpt) {
+          text_text = postTitle;
+      }
+
 
       var options = {
           loadingHtml: '<img src="/wp-content/themes/kkui2/dist/images/loading.svg" class="loading" alt="Loading" />',
@@ -70,8 +76,17 @@ export default {
       $('#twitter_link').click(function(e) {
           e.preventDefault();
           var url = postPermalink;
-          var text = postExcerpt;
+          var text = text_text;
           window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');
+      });
+
+      $('#fb_link').click(function(e) {
+          e.preventDefault();
+          FB.ui({
+              method: 'share',
+              href: postPermalink,
+              quote: text_text,
+          }, function(){});
       });
 
   },
