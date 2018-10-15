@@ -56,6 +56,8 @@ class App extends Controller
     public function sources()
     {
         global $post;
+        if( !is_object($post) )
+            return;
         $m_meta_source = get_post_meta($post->ID, 'source_fields', true);
         $html = '<div class="source-box mb-5 small-section"> <div class="section-header"><h1>Source</h1>';
         $html .= '</div><ul>';

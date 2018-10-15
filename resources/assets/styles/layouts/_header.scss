@@ -88,7 +88,11 @@
           opacity: 1;
           outline: none;
           font-size: 27px;
-          line-height: 16px;
+          line-height: 14px;
+
+          @include media-breakpoint-up(md) {
+            line-height: 23px;
+          }
 
           @include hover() {
             outline: none;
@@ -121,8 +125,12 @@
           text-transform: uppercase;
           font-weight: 300;
           color: $body-color;
-          font-size: rem(14);
+          font-size: rem(11);
           font-family: $font-family-notosans;
+
+          @include media-breakpoint-up(md) {
+            font-size: rem(14);
+          }
 
           &:hover,
           &:focus {
@@ -134,11 +142,12 @@
 
       &.menu-carousel {
         li {
-          padding: 0 5px;
+          padding: 0 2px;
           line-height: 1;
 
           @include media-breakpoint-up(md) {
             line-height: 1.5;
+            padding: 0 5px;
           }
 
           a {

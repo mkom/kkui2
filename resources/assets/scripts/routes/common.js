@@ -5,16 +5,6 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
 
-      var postPermalink = site_object.postPermalink;
-      var postTitle = site_object.postTitle;
-      var postExcerpt = site_object.postExcerpt;
-      var text_text= postExcerpt;
-
-      if(!postExcerpt) {
-          text_text = postTitle;
-      }
-
-
       var options = {
           loadingHtml: '<img src="/wp-content/themes/kkui2/dist/images/loading.svg" class="loading" alt="Loading" />',
           padding: 20,
@@ -28,18 +18,18 @@ export default {
       var owlMenu = $('.menu-carousel');
       owlMenu.owlCarousel({
           //autoplay: true,
-          margin: 6,
+          margin: 0,
           nav: true,
           dots: false,
           mouseDrag: true,
           autoWidth:true,
           responsive: {
               0: {
-                  items: 3,
+                  items: 6,
                   slideBy: 1,
               },
               600: {
-                  items: 5,
+                  items: 8,
                   slideBy: 1,
               },
               1000: {
@@ -63,7 +53,7 @@ export default {
           }
       });
 
-      if($('.main').height() <= 700) {
+      if($('.main').height() <= 600) {
           $('#footer').addClass('fixed-bottom');
       }
 
@@ -89,6 +79,15 @@ export default {
                   });
               }
           });
+      }
+
+      var postPermalink = site_object.postPermalink;
+      var postTitle = site_object.postTitle;
+      var postExcerpt = site_object.postExcerpt;
+      var text_text= postExcerpt;
+
+      if(!postExcerpt) {
+          text_text = postTitle;
       }
 
 
