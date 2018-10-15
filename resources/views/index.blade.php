@@ -14,11 +14,11 @@
 
     @while (have_posts()) @php the_post() @endphp
       @include('partials.content-'.get_post_type())
-      @endwhile
+    @endwhile
 
-      <nav class="posts-navigation text-center " role="navigation">
-          {{next_posts_link('Next Entries','')}}
-      </nav>
+    <nav class="posts-navigation text-center " role="navigation">
+        {{next_posts_link('Next Entries','')}}
+    </nav>
 
     </div>
   </div>

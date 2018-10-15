@@ -2,7 +2,9 @@ module.exports = {
   "root": true,
   "extends": "eslint:recommended",
   "globals": {
-    "wp": true
+    "wp": true,
+    "site_object": true,
+    "FB": true,
   },
   "env": {
     "node": true,

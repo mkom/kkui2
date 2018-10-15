@@ -11,11 +11,25 @@ use Roots\Sage\Template\BladeProvider;
  * Theme assets
  */
 add_action('wp_enqueue_scripts', function () {
+    global $post;
+    $text = apply_filters('the_excerpt', get_post_field('post_excerpt', $post->ID));
+
     wp_enqueue_style('sage/OpenSans', 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700', false, null);
     wp_enqueue_style('sage/Notosans', 'https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i', false, null);
     wp_enqueue_style('sage/Lora', 'https://fonts.googleapis.com/css?family=Lora:400,700', false, null);
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
+
+    $site_params = array(
+        'siteurl' => get_option('siteurl'),
+        'postPermalink' => get_the_permalink(),
+        'postTitle' => get_the_title(),
+        'postExcerpt' => strip_tags($text),
+        'postID' => $post->ID
+    );
+
+    wp_localize_script('sage/main.js', 'site_object', $site_params);
+
 }, 100);
 
 /**

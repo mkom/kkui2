@@ -78,6 +78,8 @@
 }
 
 .sidebar {
+  z-index: 1;
+
   @include make-col-ready();
 
   @include media-breakpoint-up(sm) {

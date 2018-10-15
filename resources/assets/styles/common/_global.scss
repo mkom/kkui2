@@ -99,6 +99,10 @@ p {
       height: 350px;
     }
   }
+
+  .card & {
+    height: 200px;
+  }
 }
 
 .widget {
@@ -231,6 +235,19 @@ p {
       margin-top: -2px;
       position: relative;
       display: block;
+    }
+  }
+}
+
+.small-section {
+  font-size: rem(14);
+
+  .section-header {
+    margin-bottom: 15px;
+
+    h1 {
+      font-size: rem(17);
+      padding-bottom: 12px;
     }
   }
 }

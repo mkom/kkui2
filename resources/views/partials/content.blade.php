@@ -20,7 +20,7 @@
         <a href="{{ get_permalink() }}">
           <div class="preview-image">
             @if(has_post_thumbnail())
-              <img src="{{the_post_thumbnail_url('medium')}}" class="object-fit_cover h-100 w-100"  alt="{!!  get_post(get_post_thumbnail_id())->post_title !!}" />
+              <img src="{{the_post_thumbnail_url('thumbnail')}}" class="object-fit_cover h-100 w-100"  alt="{!!  get_post(get_post_thumbnail_id())->post_title !!}" />
             @endif
           </div>
         </a>

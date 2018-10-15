@@ -2,6 +2,12 @@
   .updated {
     line-height: 26px;
   }
+
+  .small & {
+    .updated {
+      line-height: 20px;
+    }
+  }
 }
 
 .entry-title {
