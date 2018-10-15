@@ -63,11 +63,9 @@ class App extends Controller
             foreach ( $m_meta_source as $source ) {
                 $html .= '<li><a href="'.$source["url"].'" target="_blank">'.$source["name"].'</a></li>' ;
             }
+            $html .= '</ul></div>';
+            return $html;
         }
-
-        $html .= '</ul></div>';
-
-        return $html;
     }
 
     public function share()

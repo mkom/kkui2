@@ -7,7 +7,7 @@
 
 <section class="mt-5 mb-5 wrapper-list-article">
     <header class="section-header">
-        <h1>Related</h1>
+        <h1>{{ __('Related', 'kkui') }}</h1>
     </header>
     <div class="wrapper-list-article__inner">
         @php

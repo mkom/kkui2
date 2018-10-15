@@ -29,5 +29,6 @@
   </footer>
 
   @include('partials.related')
+  @include('partials.this-week')
   @php //comments_template('/partials/comments.blade.php') @endphp
 </article>

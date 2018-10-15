@@ -63,7 +63,7 @@ export default {
           }
       });
 
-      if($('.main').height() <= 600) {
+      if($('.main').height() <= 700) {
           $('#footer').addClass('fixed-bottom');
       }
 
