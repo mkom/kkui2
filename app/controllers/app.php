@@ -53,4 +53,29 @@ class App extends Controller
         return $split[2] . ' ' . $bulan[ (int)$split[1] ] . ', ' . $split[0];
     }
 
+    public function sources()
+    {
+        global $post;
+        $m_meta_source = get_post_meta($post->ID, 'source_fields', true);
+        $html = '<div class="source-box mb-5 small-section"> <div class="section-header"><h1>Source</h1>';
+        $html .= '</div><ul>';
+        foreach ( $m_meta_source as $source ) {
+            $html .= '<li><a href="'.$source["url"].'" target="_blank">'.$source["name"].'</a></li>' ;
+        }
+        $html .= '</ul></div>';
+
+        return $html;
+    }
+
+    public function share()
+    {
+        $html = '<div class="shareit small-section"> <div class="section-header d-flex"><h1>Share</h1>';
+        $html .= '<div class="shareit__inner ml-4 mb-3">';
+        $html .= '<a href="#"  id="fb_link" > <i class="fab fa-facebook-f mr-2"></i>Facebook</a>';
+        $html .= ' <a href="#" id="twitter_link" class="ml-3"> <i class="fab fa-twitter mr-2"></i>Twitter</a>';
+        $html .= '</div>';
+        $html .= '</div></div>';
+        return $html;
+    }
+
 }

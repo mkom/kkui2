@@ -19,21 +19,12 @@
     @php the_content() @endphp
   </div>
   <footer>
-    <div class="source mb-5">
-      <div class="section-header">
-        <h1>Source</h1>
-      </div>
-    </div>
+    @if($sources)
+      {!! $sources !!}
+    @endif
 
-    <div class="shareit">
-      <div class="section-header d-flex">
-        <h1>Share</h1>
-        <div class="shareit__inner ml-4 mb-3">
-          <a href="#"  id="fb_link" > <i class="fab fa-facebook-f mr-2"></i>Facebook</a>
-          <a href="#" id="twitter_link" class="ml-3"> <i class="fab fa-twitter mr-2"></i>Twitter</a>
-        </div>
-      </div>
-    </div>
+    {!! $share !!}
+
     {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
   </footer>
   @php //comments_template('/partials/comments.blade.php') @endphp

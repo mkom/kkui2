@@ -231,3 +231,16 @@ p {
   }
 }
 
+.small-section {
+  font-size: rem(14);
+
+  .section-header {
+    margin-bottom: 15px;
+
+    h1 {
+      font-size: rem(17);
+      padding-bottom: 12px;
+    }
+  }
+}
+
