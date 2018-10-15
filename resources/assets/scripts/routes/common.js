@@ -72,6 +72,25 @@ export default {
           return false;
       });
 
+      if ($('.sidebar').length) {
+          var $sidebar   = $(".sidebar"),
+              $window    = $(window),
+              offset     = $sidebar.offset(),
+              topPadding = 120;
+
+          $window.scroll(function() {
+              if ($window.scrollTop() > offset.top) {
+                  $sidebar.stop().animate({
+                      marginTop: $window.scrollTop() - offset.top + topPadding,
+                  });
+              } else {
+                  $sidebar.stop().animate({
+                      marginTop: 0,
+                  });
+              }
+          });
+      }
+
 
       $('#twitter_link').click(function(e) {
           e.preventDefault();
