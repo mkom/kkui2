@@ -19,9 +19,9 @@
     <header class="section-header">
         <h1>{{ __('This Week', 'kkui') }}</h1>
     </header>
-    <div class="wrapper-list-article__inner">
+    <div class="wrapper-list-article__inner row">
         @while ($my_query->have_posts()) @php $my_query->the_post() @endphp
-        @include('partials.content')
+        @include('partials.content-grid')
         @endwhile
 
     </div>
