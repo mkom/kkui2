@@ -65,7 +65,9 @@
       }
 
       .admin-bar & {
-        top: 32px;
+        @include media-breakpoint-up(sm) {
+          top: 32px;
+        }
       }
     }
 

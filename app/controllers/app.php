@@ -59,9 +59,12 @@ class App extends Controller
         $m_meta_source = get_post_meta($post->ID, 'source_fields', true);
         $html = '<div class="source-box mb-5 small-section"> <div class="section-header"><h1>Source</h1>';
         $html .= '</div><ul>';
-        foreach ( $m_meta_source as $source ) {
-            $html .= '<li><a href="'.$source["url"].'" target="_blank">'.$source["name"].'</a></li>' ;
+        if($m_meta_source) {
+            foreach ( $m_meta_source as $source ) {
+                $html .= '<li><a href="'.$source["url"].'" target="_blank">'.$source["name"].'</a></li>' ;
+            }
         }
+
         $html .= '</ul></div>';
 
         return $html;
