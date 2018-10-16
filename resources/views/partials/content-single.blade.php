@@ -7,7 +7,7 @@
     </div>
     @if(has_post_thumbnail())
       <div class="banner__caption pl-3 pl-md-0 pt-2">
-        <span>Gambar: {!!  get_post(get_post_thumbnail_id())->post_content !!}</span>
+        <span><i class="fas fa-camera mr-1"></i> {!!  get_post(get_post_thumbnail_id())->post_content !!}</span>
       </div>
     @endif
   </div>
