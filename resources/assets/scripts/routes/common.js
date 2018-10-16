@@ -61,7 +61,7 @@ export default {
           return false;
       });
 
-      if ($('.sidebar').length) {
+      /*if ($('.sidebar').length) {
           var $sidebar   = $(".sidebar"),
               $window    = $(window),
               offset     = $sidebar.offset(),
@@ -78,7 +78,7 @@ export default {
                   });
               }
           });
-      }
+      }*/
 
       var postPermalink = site_object.postPermalink;
       var postTitle = site_object.postTitle;

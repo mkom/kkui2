@@ -86,3 +86,14 @@
     @include make-col($sidebar-sm-columns);
   }
 }
+
+blockquote {
+  border-left: 8px solid $color-primary;
+  padding: 20px;
+  margin-left: 30px;
+  background-color: rgba($color-primary, 0.3);
+
+  p {
+    margin-bottom: 0;
+  }
+}
