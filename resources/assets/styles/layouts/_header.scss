@@ -125,12 +125,8 @@
           text-transform: uppercase;
           font-weight: 300;
           color: $body-color;
-          font-size: rem(11);
+          font-size: rem(14);
           font-family: $font-family-notosans;
-
-          @include media-breakpoint-up(md) {
-            font-size: rem(14);
-          }
 
           &:hover,
           &:focus {
@@ -148,12 +144,6 @@
           @include media-breakpoint-up(md) {
             line-height: 1.5;
             padding: 0 5px;
-          }
-
-          a {
-            @include media-breakpoint-down(sm) {
-              font-weight: 600;
-            }
           }
         }
       }

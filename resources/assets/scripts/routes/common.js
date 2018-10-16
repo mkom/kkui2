@@ -18,23 +18,22 @@ export default {
       var owlMenu = $('.menu-carousel');
       owlMenu.owlCarousel({
           //autoplay: true,
-          margin: 0,
+          margin: 15,
           nav: true,
           dots: false,
           mouseDrag: true,
           autoWidth:true,
+          items: 10,
+          slideBy: 1,
           responsive: {
               0: {
-                  items: 6,
-                  slideBy: 1,
+                  items: 4,
               },
               600: {
                   items: 8,
-                  slideBy: 1,
               },
               1000: {
                   items: 10,
-                  slideBy: 1,
               },
           },
       });
